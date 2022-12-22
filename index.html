@@ -1,51 +1,51 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" oncontextmenu="return false">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>QR code Generator</title>
+    <link
+      rel="icon"
+      href="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+      type="image/png"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
     />
-    <style>
-      .qr-code {
-        max-width: 200px;
-        margin: 10px;
-      }
-    </style>
-    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <div class="container-fluid">
       <div class="text-center">
         <img
           src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+          alt="qrcode"
           class="qr-code img-thumbnail img-responsive"
         />
       </div>
-
       <div class="form-horizontal">
         <div class="form-group">
-          <label class="control-label col-sm-2" for="content">Conteúdo: </label>
-          <div class="col-sm-10">
+          <label for="content" class="control-label col-sm-2">Conteúdo: </label>
+          <div class="col-sm-8">
             <input
               type="text"
-              size="60"
-              maxlength="80"
               class="form-control"
               id="content"
-              placeholder="Digite o conteúdo do QR Code"
+              size="60"
+              maxlength="80"
+              placeholder="Digite o conteúdo do QR code"
             />
           </div>
         </div>
         <div class="form-group">
-          <div class="col-sm-offset-2 col-sm-10">
-            <button type="button" class="btn btn-default" id="generate">
-              Gerar
-            </button>
+          <div class="col-sm-offset-2 col-sm-9" id="mainButton">
+            <button class="btn btn-default" id="generate">Gerar</button>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="main.js"></script>
   </body>
 </html>
