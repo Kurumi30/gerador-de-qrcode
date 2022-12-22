@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,300;0,600;1,400&display=swap');
+
+body {
+    background-color: rgba(226, 77, 77, 0.8);
+    font-family: 'Livvic', sans-serif;
+}
+
+.qr-code {
+  max-width: 200px;
+  margin: 10px;
+}
+
+input {
+    font-weight: bold;
+    border: none;
+}
+
+.control-label {
+    color: rgb(57, 57, 204);
+}
